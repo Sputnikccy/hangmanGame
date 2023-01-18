@@ -1,0 +1,411 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details,
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.app {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  margin: "0 auto";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hangmanDrawing {
+  position: relative;
+}
+.hangmanDrawing .bottomBar {
+  height: 10px;
+  width: 250px;
+  background: black;
+}
+.hangmanDrawing .verticalBar {
+  height: 400px;
+  width: 10px;
+  background: black;
+  margin-left: 120px;
+}
+.hangmanDrawing .topBar {
+  height: 10px;
+  width: 200px;
+  background: black;
+  margin-left: 120px;
+}
+.hangmanDrawing .shortBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 10px;
+  background: black;
+}
+.hangmanDrawing .head {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 10px solid black;
+  position: absolute;
+  top: 50px;
+  right: -30px;
+}
+.hangmanDrawing .body {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  height: 100px;
+  width: 10px;
+  background: black;
+}
+.hangmanDrawing .rightArm {
+  position: absolute;
+  top: 150px;
+  right: -100px;
+  width: 100px;
+  height: 10px;
+  background: black;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+}
+.hangmanDrawing .leftArm {
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  width: 100px;
+  height: 10px;
+  background: black;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+}
+.hangmanDrawing .leftLeg {
+  position: absolute;
+  top: 210px;
+  right: -90px;
+  width: 100px;
+  height: 10px;
+  background: black;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+}
+.hangmanDrawing .rightLeg {
+  position: absolute;
+  top: 210px;
+  right: 0px;
+  width: 100px;
+  height: 10px;
+  background: black;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+}
+
+.humanWord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.25em;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: "monospace";
+  text-transform: uppercase;
+}
+.humanWord .letterWrapper {
+  border-bottom: 0.1em solid black;
+}
+
+.keyboardWrapper {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+.keyboardWrapper .keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 0.5rem;
+}
+.keyboardWrapper .btn {
+  width: 100%;
+  border: 3px solid black;
+  background: none;
+  aspect-ratio: 1/1;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  color: black;
+  cursor: pointer;
+}
+.keyboardWrapper .btn:hover:not(:disabled), .keyboardWrapper .btn:focus:not(:disabled) {
+  background-color: hsl(200deg, 100%, 75%);
+  color: white;
+}
+.keyboardWrapper .btn:active {
+  background-color: hsl(200deg, 100%, 50%);
+}
+.keyboardWrapper .btn:inactive {
+  opacity: 0.3;
+}

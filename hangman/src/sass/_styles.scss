@@ -1,0 +1,167 @@
+//app.tsx
+.app {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: '0 auto';
+    align-items: center;
+}
+
+//message 
+.message {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+//hangmanDrawing
+.hangmanDrawing {
+    position: relative;
+
+    .bottomBar {
+        height: 10px;
+        width: 250px;
+        background: black;
+    }
+
+    .verticalBar {
+        height: 400px;
+        width: 10px;
+        background: black;
+        margin-left: 120px;
+    }
+
+    .topBar {
+        height: 10px;
+        width: 200px;
+        background: black;
+        margin-left: 120px;
+    }
+
+    .shortBar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 50px;
+        width: 10px;
+        background: black;
+    }
+
+    .head {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: 10px solid black;
+        position: absolute;
+        top: 50px;
+        right: -30px
+    }
+
+    .body {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        height: 100px;
+        width: 10px;
+        background: black;
+    }
+
+    .rightArm {
+        position: absolute;
+        top: 150px;
+        right: -100px;
+        width: 100px;
+        height: 10px;
+        background: black;
+        transform: rotate(-30deg);
+        transform-origin: left bottom
+    }
+
+    .leftArm {
+        position: absolute;
+        top: 150px;
+        right: 10px;
+        width: 100px;
+        height: 10px;
+        background: black;
+        transform: rotate(30deg);
+        transform-origin: right bottom
+    }
+
+    .leftLeg {
+        position: absolute;
+        top: 210px;
+        right: -90px;
+        width: 100px;
+        height: 10px;
+        background: black;
+        transform: rotate(60deg);
+        transform-origin: left bottom
+    }
+
+    .rightLeg {
+        position: absolute;
+        top: 210px;
+        right: 0px;
+        width: 100px;
+        height: 10px;
+        background: black;
+        transform: rotate(-60deg);
+        transform-origin: right bottom
+    }
+}
+
+//humanWord
+.humanWord {
+    display: flex;
+    gap: .25em;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: "monospace";
+    text-transform: uppercase;
+
+    .letterWrapper {
+        border-bottom: .1em solid black;
+    }
+}
+
+
+//keyboard
+.keyboardWrapper {
+    align-self: stretch;
+
+    .keyboard {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+        gap: .5rem
+    }
+
+    // .btn {
+    //     width: 100%;
+    //     border: 3px solid black;
+    //     background: none;
+    //     aspect-ratio: 1/1;
+    //     font-size: 2.5rem;
+    //     font-weight: bold;
+    //     text-transform: uppercase;
+    //     padding: .5rem;
+    //     color: black;
+    //     cursor: pointer;
+
+    //     &:hover:not(:disabled),
+    //     &:focus:not(:disabled){
+    //         background-color: hsl(200,100%,75%);
+    //         color:white;
+    //     }
+
+    //     &:active{
+    //         background-color: hsl(200,100%,50%);
+    //     }
+
+    //     &:inactive{
+    //         opacity: .3;
+    //     }
+    // }
+
+}
